@@ -120,7 +120,7 @@ namespace BitByte {
 			// button1
 			// 
 			this->button1->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->button1->Location = System::Drawing::Point(0, 27);
+			this->button1->Location = System::Drawing::Point(11, 27);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(75, 30);
 			this->button1->TabIndex = 2;
@@ -131,7 +131,7 @@ namespace BitByte {
 			// button2
 			// 
 			this->button2->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->button2->Location = System::Drawing::Point(81, 27);
+			this->button2->Location = System::Drawing::Point(92, 27);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(75, 29);
 			this->button2->TabIndex = 3;
@@ -142,7 +142,7 @@ namespace BitByte {
 			// button3
 			// 
 			this->button3->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->button3->Location = System::Drawing::Point(162, 28);
+			this->button3->Location = System::Drawing::Point(173, 28);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(75, 29);
 			this->button3->TabIndex = 4;
@@ -261,7 +261,7 @@ namespace BitByte {
 			// button4
 			// 
 			this->button4->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->button4->Location = System::Drawing::Point(243, 28);
+			this->button4->Location = System::Drawing::Point(254, 28);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(75, 29);
 			this->button4->TabIndex = 6;

@@ -1,3 +1,6 @@
 C:\Users\svyat\Documents\GitHub\Bitbyte\main\BitByte\BitByte\x64\Debug\BitByte.vcxproj.AssemblyReference.cache
 C:\Users\svyat\Documents\GitHub\Bitbyte\main\BitByte\BitByte\x64\Debug\BitByte.mainWindow.resources
 C:\Users\svyat\Documents\GitHub\Bitbyte\main\BitByte\BitByte\x64\Debug\BitByte.vcxproj.GenerateResource.cache
+C:\Users\svyat\Documents\GitHub\Bitbyte\BitByte-Notebook\BitByte\BitByte\x64\Debug\BitByte.vcxproj.AssemblyReference.cache
+C:\Users\svyat\Documents\GitHub\Bitbyte\BitByte-Notebook\BitByte\BitByte\x64\Debug\BitByte.mainWindow.resources
+C:\Users\svyat\Documents\GitHub\Bitbyte\BitByte-Notebook\BitByte\BitByte\x64\Debug\BitByte.vcxproj.GenerateResource.cache
