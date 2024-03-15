@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\main",
-    "\\main\\Bit-Byte"
+    "\\BitByte-Notebook",
+    "\\BitByte-Notebook\\BitByte"
   ],
-  "SelectedNode": "\\main\\Bit-Byte",
+  "SelectedNode": "\\BitByte-Notebook\\BitByte\\mainWindow.h",
   "PreviewInSolutionExplorer": false
 }
