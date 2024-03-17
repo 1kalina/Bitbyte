@@ -1,0 +1,6 @@
+﻿  mainWindow.cpp
+C:\Users\svyat\Documents\GitHub\Bitbyte\BitByte-Notebook\BitByte\mainWindow.cpp(6,33): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+  .NETFramework,Version=v4.8.AssemblyAttributes.cpp
+  Generating Code...
+  mainWindow.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  BitByte.vcxproj -> C:\Users\svyat\Documents\GitHub\Bitbyte\BitByte-Notebook\BitByte\x64\Release\BitByte.exe

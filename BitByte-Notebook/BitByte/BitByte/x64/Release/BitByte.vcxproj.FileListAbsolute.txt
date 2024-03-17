@@ -1,0 +1,3 @@
+C:\Users\svyat\Documents\GitHub\Bitbyte\BitByte-Notebook\BitByte\BitByte\x64\Release\BitByte.vcxproj.AssemblyReference.cache
+C:\Users\svyat\Documents\GitHub\Bitbyte\BitByte-Notebook\BitByte\BitByte\x64\Release\BitByte.mainWindow.resources
+C:\Users\svyat\Documents\GitHub\Bitbyte\BitByte-Notebook\BitByte\BitByte\x64\Release\BitByte.vcxproj.GenerateResource.cache

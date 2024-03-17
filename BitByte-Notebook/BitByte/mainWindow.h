@@ -81,6 +81,7 @@ namespace BitByte {
 		void InitializeComponent(void)
 		{
 			this->components = (gcnew System::ComponentModel::Container());
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(mainWindow::typeid));
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
@@ -282,8 +283,9 @@ namespace BitByte {
 			// 
 			// mainWindow
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(10, 21);
-			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Inherit;
+			this->AutoSize = true;
+			this->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
 			this->ClientSize = System::Drawing::Size(563, 699);
 			this->Controls->Add(this->richTextBox1);
 			this->Controls->Add(this->button4);
@@ -294,6 +296,7 @@ namespace BitByte {
 			this->Controls->Add(this->menuStrip1);
 			this->Font = (gcnew System::Drawing::Font(L"Times New Roman", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Margin = System::Windows::Forms::Padding(5);
 			this->Name = L"mainWindow";
 			this->Text = L"BitByte";
