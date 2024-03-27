@@ -300,6 +300,7 @@ namespace BitByte {
 			this->Margin = System::Windows::Forms::Padding(5);
 			this->Name = L"mainWindow";
 			this->Text = L"BitByte";
+			this->Load += gcnew System::EventHandler(this, &mainWindow::mainWindow_Load);
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
 			this->contextMenuStrip1->ResumeLayout(false);
@@ -427,6 +428,8 @@ namespace BitByte {
 		}
 	}
 
-	};
+	private: System::Void mainWindow_Load(System::Object^ sender, System::EventArgs^ e) {
+	}
+};
 
 }
