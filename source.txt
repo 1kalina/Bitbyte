@@ -1,3 +1,0 @@
-https://www.youtube.com/watch?v=O00FTZDxD0o (Базовий курс по GitHub)
-https://github.com/notepad-plus-plus (GitHub сторінка блокноту з якого я брав ідею розташування елементів)
-https://ravesli.com/uroki-cpp/ (Уроки по мові С++)

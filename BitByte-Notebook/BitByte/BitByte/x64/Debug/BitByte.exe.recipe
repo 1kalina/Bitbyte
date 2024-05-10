@@ -2,10 +2,14 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\svyat\Documents\GitHub\Bitbyte\BitByte-Notebook\BitByte\x64\Debug\BitByte.exe</FullPath>
+      <FullPath>C:\Users\svyat\Documents\GitHub\BitByte\BitByte-Notebook\BitByte\x64\Debug\BitByte.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
-  <SatelliteDlls />
+  <SatelliteDlls>
+    <SatelliteDll>
+      <FullPath>C:\Users\svyat\Documents\GitHub\BitByte\BitByte-Notebook\BitByte\BitByte\x64\Debug\en\BitByte.resources.dll</FullPath>
+    </SatelliteDll>
+  </SatelliteDlls>
   <NonRecipeFileRefs />
 </Project>

@@ -5,8 +5,6 @@ VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BitByte", "BitByte.vcxproj", "{D0872A94-7C71-4932-BB9E-6BF9276A3EFD}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BitByteSetup", "..\..\BitByteSetup\BitByteSetup.vdproj", "{1815CA4D-28B8-4D03-A0E3-0B64993C1139}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -23,10 +21,6 @@ Global
 		{D0872A94-7C71-4932-BB9E-6BF9276A3EFD}.Release|x64.Build.0 = Release|x64
 		{D0872A94-7C71-4932-BB9E-6BF9276A3EFD}.Release|x86.ActiveCfg = Release|Win32
 		{D0872A94-7C71-4932-BB9E-6BF9276A3EFD}.Release|x86.Build.0 = Release|Win32
-		{1815CA4D-28B8-4D03-A0E3-0B64993C1139}.Debug|x64.ActiveCfg = Debug
-		{1815CA4D-28B8-4D03-A0E3-0B64993C1139}.Debug|x86.ActiveCfg = Debug
-		{1815CA4D-28B8-4D03-A0E3-0B64993C1139}.Release|x64.ActiveCfg = Release
-		{1815CA4D-28B8-4D03-A0E3-0B64993C1139}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

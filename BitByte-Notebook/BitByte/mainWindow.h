@@ -39,7 +39,7 @@ namespace BitByte {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::TextBox^ textBox1;
+
 	protected:
 	private: String^ filePath = nullptr;
 
@@ -51,9 +51,9 @@ namespace BitByte {
 	private: System::Windows::Forms::ToolStripMenuItem^ newToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ saveToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ openToolStripMenuItem;
-	private: System::Windows::Forms::ContextMenuStrip^ contextMenuStrip1;
-	private: System::Windows::Forms::ToolStripMenuItem^ ffdToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^ toolStripMenuItem1;
+
+
+
 	private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
 	private: System::Windows::Forms::ToolStripMenuItem^ editToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ cutToolStripMenuItem;
@@ -64,6 +64,23 @@ namespace BitByte {
 
 	private: String^ fileName;
 	private: System::Windows::Forms::RichTextBox^ richTextBox1;
+
+	private:
+
+	private: System::Windows::Forms::ToolStripMenuItem^ formatToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ fontToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ fontColorToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ backgroundColorToolStripMenuItem;
+	private: System::Windows::Forms::FontDialog^ fontDialog1;
+	private: System::Windows::Forms::ColorDialog^ colorDialog1;
+	private: System::Windows::Forms::ToolStripSeparator^ toolStripSeparator1;
+	private: System::Windows::Forms::ToolStripMenuItem^ resetToolStripMenuItem;
+	private: System::Windows::Forms::ContextMenuStrip^ contextMenuStrip1;
+	private: System::Windows::Forms::ToolStripMenuItem^ copyToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^ pasteToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^ cutToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^ toolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripSeparator^ toolStripSeparator2;
 
 
 	private: System::ComponentModel::IContainer^ components;
@@ -82,7 +99,6 @@ namespace BitByte {
 		{
 			this->components = (gcnew System::ComponentModel::Container());
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(mainWindow::typeid));
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
@@ -95,73 +111,59 @@ namespace BitByte {
 			this->cutToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->copyToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->pasteToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->contextMenuStrip1 = (gcnew System::Windows::Forms::ContextMenuStrip(this->components));
-			this->ffdToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->toolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->formatToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->fontToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->fontColorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->backgroundColorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripSeparator1 = (gcnew System::Windows::Forms::ToolStripSeparator());
+			this->resetToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->openFileDialog1 = (gcnew System::Windows::Forms::OpenFileDialog());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->richTextBox1 = (gcnew System::Windows::Forms::RichTextBox());
+			this->contextMenuStrip1 = (gcnew System::Windows::Forms::ContextMenuStrip(this->components));
+			this->toolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripSeparator2 = (gcnew System::Windows::Forms::ToolStripSeparator());
+			this->cutToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->copyToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->pasteToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->fontDialog1 = (gcnew System::Windows::Forms::FontDialog());
+			this->colorDialog1 = (gcnew System::Windows::Forms::ColorDialog());
 			this->menuStrip1->SuspendLayout();
 			this->contextMenuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
-			// textBox1
-			// 
-			this->textBox1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-				| System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
-			this->textBox1->Location = System::Drawing::Point(0, 59);
-			this->textBox1->Margin = System::Windows::Forms::Padding(3, 50, 3, 3);
-			this->textBox1->Multiline = true;
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(563, 640);
-			this->textBox1->TabIndex = 1;
-			this->textBox1->Visible = false;
-			// 
 			// button1
 			// 
 			this->button1->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->button1->Location = System::Drawing::Point(11, 27);
+			resources->ApplyResources(this->button1, L"button1");
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(75, 30);
-			this->button1->TabIndex = 2;
-			this->button1->Text = L"New";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &mainWindow::newToolStripMenuItem_Click);
 			// 
 			// button2
 			// 
 			this->button2->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->button2->Location = System::Drawing::Point(92, 27);
+			resources->ApplyResources(this->button2, L"button2");
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(75, 29);
-			this->button2->TabIndex = 3;
-			this->button2->Text = L"Save";
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &mainWindow::saveToolStripMenuItem_Click);
 			// 
 			// button3
 			// 
 			this->button3->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->button3->Location = System::Drawing::Point(173, 28);
+			resources->ApplyResources(this->button3, L"button3");
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(75, 29);
-			this->button3->TabIndex = 4;
-			this->button3->Text = L"Open";
 			this->button3->UseVisualStyleBackColor = true;
 			this->button3->Click += gcnew System::EventHandler(this, &mainWindow::openToolStripMenuItem_Click);
 			// 
 			// menuStrip1
 			// 
-			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
 				this->fileToolStripMenuItem,
-					this->editToolStripMenuItem
+					this->editToolStripMenuItem, this->formatToolStripMenuItem
 			});
-			this->menuStrip1->Location = System::Drawing::Point(0, 0);
+			resources->ApplyResources(this->menuStrip1, L"menuStrip1");
 			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(563, 24);
-			this->menuStrip1->TabIndex = 5;
-			this->menuStrip1->Text = L"menuStrip1";
 			// 
 			// fileToolStripMenuItem
 			// 
@@ -170,32 +172,24 @@ namespace BitByte {
 					this->saveToolStripMenuItem, this->openToolStripMenuItem
 			});
 			this->fileToolStripMenuItem->Name = L"fileToolStripMenuItem";
-			this->fileToolStripMenuItem->Size = System::Drawing::Size(37, 20);
-			this->fileToolStripMenuItem->Text = L"File";
+			resources->ApplyResources(this->fileToolStripMenuItem, L"fileToolStripMenuItem");
 			// 
 			// newToolStripMenuItem
 			// 
 			this->newToolStripMenuItem->Name = L"newToolStripMenuItem";
-			this->newToolStripMenuItem->ShortcutKeyDisplayString = L"Ctrl + N";
-			this->newToolStripMenuItem->ShortcutKeys = static_cast<System::Windows::Forms::Keys>((System::Windows::Forms::Keys::Control | System::Windows::Forms::Keys::N));
-			this->newToolStripMenuItem->Size = System::Drawing::Size(147, 22);
-			this->newToolStripMenuItem->Text = L"New";
+			resources->ApplyResources(this->newToolStripMenuItem, L"newToolStripMenuItem");
 			this->newToolStripMenuItem->Click += gcnew System::EventHandler(this, &mainWindow::newToolStripMenuItem_Click);
 			// 
 			// saveToolStripMenuItem
 			// 
 			this->saveToolStripMenuItem->Name = L"saveToolStripMenuItem";
-			this->saveToolStripMenuItem->ShortcutKeys = static_cast<System::Windows::Forms::Keys>((System::Windows::Forms::Keys::Control | System::Windows::Forms::Keys::S));
-			this->saveToolStripMenuItem->Size = System::Drawing::Size(147, 22);
-			this->saveToolStripMenuItem->Text = L"Save";
+			resources->ApplyResources(this->saveToolStripMenuItem, L"saveToolStripMenuItem");
 			this->saveToolStripMenuItem->Click += gcnew System::EventHandler(this, &mainWindow::saveToolStripMenuItem_Click);
 			// 
 			// openToolStripMenuItem
 			// 
 			this->openToolStripMenuItem->Name = L"openToolStripMenuItem";
-			this->openToolStripMenuItem->ShortcutKeys = static_cast<System::Windows::Forms::Keys>((System::Windows::Forms::Keys::Control | System::Windows::Forms::Keys::O));
-			this->openToolStripMenuItem->Size = System::Drawing::Size(147, 22);
-			this->openToolStripMenuItem->Text = L"Open";
+			resources->ApplyResources(this->openToolStripMenuItem, L"openToolStripMenuItem");
 			this->openToolStripMenuItem->Click += gcnew System::EventHandler(this, &mainWindow::openToolStripMenuItem_Click);
 			// 
 			// editToolStripMenuItem
@@ -205,101 +199,146 @@ namespace BitByte {
 					this->copyToolStripMenuItem, this->pasteToolStripMenuItem
 			});
 			this->editToolStripMenuItem->Name = L"editToolStripMenuItem";
-			this->editToolStripMenuItem->Size = System::Drawing::Size(39, 20);
-			this->editToolStripMenuItem->Text = L"Edit";
+			resources->ApplyResources(this->editToolStripMenuItem, L"editToolStripMenuItem");
 			// 
 			// cutToolStripMenuItem
 			// 
 			this->cutToolStripMenuItem->Name = L"cutToolStripMenuItem";
-			this->cutToolStripMenuItem->ShortcutKeyDisplayString = L"Ctrl + X";
-			this->cutToolStripMenuItem->ShortcutKeys = static_cast<System::Windows::Forms::Keys>((System::Windows::Forms::Keys::Control | System::Windows::Forms::Keys::X));
-			this->cutToolStripMenuItem->Size = System::Drawing::Size(150, 22);
-			this->cutToolStripMenuItem->Text = L"Cut";
+			resources->ApplyResources(this->cutToolStripMenuItem, L"cutToolStripMenuItem");
 			this->cutToolStripMenuItem->Click += gcnew System::EventHandler(this, &mainWindow::cutToolStripMenuItem_Click);
 			// 
 			// copyToolStripMenuItem
 			// 
 			this->copyToolStripMenuItem->Name = L"copyToolStripMenuItem";
-			this->copyToolStripMenuItem->ShortcutKeyDisplayString = L"Ctrl + C";
-			this->copyToolStripMenuItem->ShortcutKeys = static_cast<System::Windows::Forms::Keys>((System::Windows::Forms::Keys::Control | System::Windows::Forms::Keys::C));
-			this->copyToolStripMenuItem->Size = System::Drawing::Size(150, 22);
-			this->copyToolStripMenuItem->Text = L"Copy";
+			resources->ApplyResources(this->copyToolStripMenuItem, L"copyToolStripMenuItem");
 			this->copyToolStripMenuItem->Click += gcnew System::EventHandler(this, &mainWindow::copyToolStripMenuItem_Click);
 			// 
 			// pasteToolStripMenuItem
 			// 
 			this->pasteToolStripMenuItem->Name = L"pasteToolStripMenuItem";
-			this->pasteToolStripMenuItem->ShortcutKeyDisplayString = L"Ctrl + V";
-			this->pasteToolStripMenuItem->ShortcutKeys = static_cast<System::Windows::Forms::Keys>((System::Windows::Forms::Keys::Control | System::Windows::Forms::Keys::V));
-			this->pasteToolStripMenuItem->Size = System::Drawing::Size(150, 22);
-			this->pasteToolStripMenuItem->Text = L"Paste";
+			resources->ApplyResources(this->pasteToolStripMenuItem, L"pasteToolStripMenuItem");
 			this->pasteToolStripMenuItem->Click += gcnew System::EventHandler(this, &mainWindow::pasteToolStripMenuItem_Click);
 			// 
-			// contextMenuStrip1
+			// formatToolStripMenuItem
 			// 
-			this->contextMenuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
-				this->ffdToolStripMenuItem,
-					this->toolStripMenuItem1
+			this->formatToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(5) {
+				this->fontToolStripMenuItem,
+					this->fontColorToolStripMenuItem, this->backgroundColorToolStripMenuItem, this->toolStripSeparator1, this->resetToolStripMenuItem
 			});
-			this->contextMenuStrip1->Name = L"contextMenuStrip1";
-			this->contextMenuStrip1->Size = System::Drawing::Size(90, 48);
+			this->formatToolStripMenuItem->Name = L"formatToolStripMenuItem";
+			resources->ApplyResources(this->formatToolStripMenuItem, L"formatToolStripMenuItem");
 			// 
-			// ffdToolStripMenuItem
+			// fontToolStripMenuItem
 			// 
-			this->ffdToolStripMenuItem->Name = L"ffdToolStripMenuItem";
-			this->ffdToolStripMenuItem->Size = System::Drawing::Size(89, 22);
-			this->ffdToolStripMenuItem->Text = L"ffd";
+			this->fontToolStripMenuItem->Name = L"fontToolStripMenuItem";
+			resources->ApplyResources(this->fontToolStripMenuItem, L"fontToolStripMenuItem");
+			this->fontToolStripMenuItem->Click += gcnew System::EventHandler(this, &mainWindow::fontToolStripMenuItem_Click);
 			// 
-			// toolStripMenuItem1
+			// fontColorToolStripMenuItem
 			// 
-			this->toolStripMenuItem1->Name = L"toolStripMenuItem1";
-			this->toolStripMenuItem1->Size = System::Drawing::Size(89, 22);
+			this->fontColorToolStripMenuItem->Name = L"fontColorToolStripMenuItem";
+			resources->ApplyResources(this->fontColorToolStripMenuItem, L"fontColorToolStripMenuItem");
+			this->fontColorToolStripMenuItem->Click += gcnew System::EventHandler(this, &mainWindow::fontColorToolStripMenuItem_Click);
+			// 
+			// backgroundColorToolStripMenuItem
+			// 
+			this->backgroundColorToolStripMenuItem->Name = L"backgroundColorToolStripMenuItem";
+			resources->ApplyResources(this->backgroundColorToolStripMenuItem, L"backgroundColorToolStripMenuItem");
+			this->backgroundColorToolStripMenuItem->Click += gcnew System::EventHandler(this, &mainWindow::backgroundColorToolStripMenuItem_Click);
+			// 
+			// toolStripSeparator1
+			// 
+			this->toolStripSeparator1->Name = L"toolStripSeparator1";
+			resources->ApplyResources(this->toolStripSeparator1, L"toolStripSeparator1");
+			// 
+			// resetToolStripMenuItem
+			// 
+			this->resetToolStripMenuItem->Name = L"resetToolStripMenuItem";
+			resources->ApplyResources(this->resetToolStripMenuItem, L"resetToolStripMenuItem");
+			this->resetToolStripMenuItem->Click += gcnew System::EventHandler(this, &mainWindow::resetToolStripMenuItem_Click);
 			// 
 			// openFileDialog1
 			// 
-			this->openFileDialog1->Filter = L"\"txt|\"";
+			resources->ApplyResources(this->openFileDialog1, L"openFileDialog1");
 			// 
 			// button4
 			// 
 			this->button4->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->button4->Location = System::Drawing::Point(254, 28);
+			resources->ApplyResources(this->button4, L"button4");
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(75, 29);
-			this->button4->TabIndex = 6;
-			this->button4->Text = L"Paste";
 			this->button4->UseVisualStyleBackColor = true;
 			this->button4->Click += gcnew System::EventHandler(this, &mainWindow::pasteToolStripMenuItem_Click);
 			// 
 			// richTextBox1
 			// 
-			this->richTextBox1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-				| System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
-			this->richTextBox1->Location = System::Drawing::Point(12, 63);
+			this->richTextBox1->AcceptsTab = true;
+			resources->ApplyResources(this->richTextBox1, L"richTextBox1");
+			this->richTextBox1->AutoWordSelection = true;
+			this->richTextBox1->ContextMenuStrip = this->contextMenuStrip1;
+			this->richTextBox1->Cursor = System::Windows::Forms::Cursors::IBeam;
+			this->richTextBox1->EnableAutoDragDrop = true;
 			this->richTextBox1->Name = L"richTextBox1";
-			this->richTextBox1->Size = System::Drawing::Size(551, 636);
-			this->richTextBox1->TabIndex = 7;
-			this->richTextBox1->Text = L"";
+			// 
+			// contextMenuStrip1
+			// 
+			this->contextMenuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(5) {
+				this->toolStripMenuItem1,
+					this->toolStripSeparator2, this->cutToolStripMenuItem1, this->copyToolStripMenuItem1, this->pasteToolStripMenuItem1
+			});
+			this->contextMenuStrip1->Name = L"contextMenuStrip1";
+			resources->ApplyResources(this->contextMenuStrip1, L"contextMenuStrip1");
+			// 
+			// toolStripMenuItem1
+			// 
+			this->toolStripMenuItem1->Name = L"toolStripMenuItem1";
+			resources->ApplyResources(this->toolStripMenuItem1, L"toolStripMenuItem1");
+			this->toolStripMenuItem1->Click += gcnew System::EventHandler(this, &mainWindow::resetToolStripMenuItem_Click);
+			// 
+			// toolStripSeparator2
+			// 
+			this->toolStripSeparator2->Name = L"toolStripSeparator2";
+			resources->ApplyResources(this->toolStripSeparator2, L"toolStripSeparator2");
+			// 
+			// cutToolStripMenuItem1
+			// 
+			this->cutToolStripMenuItem1->Name = L"cutToolStripMenuItem1";
+			resources->ApplyResources(this->cutToolStripMenuItem1, L"cutToolStripMenuItem1");
+			this->cutToolStripMenuItem1->Click += gcnew System::EventHandler(this, &mainWindow::cutToolStripMenuItem_Click);
+			// 
+			// copyToolStripMenuItem1
+			// 
+			this->copyToolStripMenuItem1->Name = L"copyToolStripMenuItem1";
+			resources->ApplyResources(this->copyToolStripMenuItem1, L"copyToolStripMenuItem1");
+			this->copyToolStripMenuItem1->Click += gcnew System::EventHandler(this, &mainWindow::copyToolStripMenuItem_Click);
+			// 
+			// pasteToolStripMenuItem1
+			// 
+			this->pasteToolStripMenuItem1->Name = L"pasteToolStripMenuItem1";
+			resources->ApplyResources(this->pasteToolStripMenuItem1, L"pasteToolStripMenuItem1");
+			this->pasteToolStripMenuItem1->Click += gcnew System::EventHandler(this, &mainWindow::pasteToolStripMenuItem_Click);
+			// 
+			// fontDialog1
+			// 
+			this->fontDialog1->Font = (gcnew System::Drawing::Font(L"Comic Sans MS", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->fontDialog1->ShowColor = true;
+			// 
+			// colorDialog1
+			// 
+			this->colorDialog1->AnyColor = true;
 			// 
 			// mainWindow
 			// 
+			this->AllowDrop = true;
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Inherit;
-			this->AutoSize = true;
-			this->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
-			this->ClientSize = System::Drawing::Size(563, 699);
+			resources->ApplyResources(this, L"$this");
 			this->Controls->Add(this->richTextBox1);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->button2);
-			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->menuStrip1);
-			this->Font = (gcnew System::Drawing::Font(L"Times New Roman", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
-			this->Margin = System::Windows::Forms::Padding(5);
 			this->Name = L"mainWindow";
-			this->Text = L"BitByte";
 			this->Load += gcnew System::EventHandler(this, &mainWindow::mainWindow_Load);
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
@@ -430,6 +469,48 @@ namespace BitByte {
 
 	private: System::Void mainWindow_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
-};
+
+		   // font buttom (style)
+	private: System::Void fontToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		if (fontDialog1->ShowDialog() == System::Windows::Forms::DialogResult::OK)
+		{
+			richTextBox1->Font = fontDialog1->Font;
+			richTextBox1->ForeColor = fontDialog1->Color;
+		}
+	}
+		   // font color buttom (style)
+	private: System::Void fontColorToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		if (colorDialog1->ShowDialog() == System::Windows::Forms::DialogResult::OK)
+		{
+			richTextBox1->ForeColor = colorDialog1->Color;
+		}
+	}
+		   // backgound buttom (style)
+	private: System::Void backgroundColorToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		if (colorDialog1->ShowDialog() == System::Windows::Forms::DialogResult::OK)
+		{
+			richTextBox1->BackColor = colorDialog1->Color;
+		}
+	}
+
+		   // set a default language
+	private:
+		System::Drawing::Font^ defaultFont;
+		System::Void Form1_Load(System::Object^ sender, System::EventArgs^ e) {
+			// Store the default font of richTextBox1
+			defaultFont = richTextBox1->Font;
+		}
+		// reset buttom
+	private: System::Void resetToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		// Reset font to default ()
+		richTextBox1->Font = defaultFont;
+
+		// Reset font color to default (black)
+		richTextBox1->ForeColor = System::Drawing::Color::Black;
+
+		// Reset background color to default (white)
+		richTextBox1->BackColor = System::Drawing::Color::White;
+	}
+	};
 
 }
