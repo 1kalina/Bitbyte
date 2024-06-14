@@ -7,8 +7,20 @@
       "RelativeMoniker": "D:0:0:{D0872A94-7C71-4932-BB9E-6BF9276A3EFD}|BitByte.vcxproj|solutionrelative:mainWindow.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D0872A94-7C71-4932-BB9E-6BF9276A3EFD}|BitByte.vcxproj|C:\\Users\\svyat\\Documents\\GitHub\\BitByte\\BitByte-Notebook\\BitByte\\about.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
+      "RelativeMoniker": "D:0:0:{D0872A94-7C71-4932-BB9E-6BF9276A3EFD}|BitByte.vcxproj|solutionrelative:about.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D0872A94-7C71-4932-BB9E-6BF9276A3EFD}|BitByte.vcxproj|C:\\Users\\svyat\\Documents\\GitHub\\BitByte\\BitByte-Notebook\\BitByte\\mainWindow.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D0872A94-7C71-4932-BB9E-6BF9276A3EFD}|BitByte.vcxproj|solutionrelative:mainWindow.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0872A94-7C71-4932-BB9E-6BF9276A3EFD}|BitByte.vcxproj|C:\\Users\\svyat\\Documents\\GitHub\\BitByte\\BitByte-Notebook\\BitByte\\about.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D0872A94-7C71-4932-BB9E-6BF9276A3EFD}|BitByte.vcxproj|solutionrelative:about.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0872A94-7C71-4932-BB9E-6BF9276A3EFD}|BitByte.vcxproj|C:\\Users\\svyat\\Documents\\GitHub\\BitByte\\BitByte-Notebook\\BitByte\\mainWindow.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D0872A94-7C71-4932-BB9E-6BF9276A3EFD}|BitByte.vcxproj|solutionrelative:mainWindow.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,15 +42,40 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "about.h",
+              "DocumentMoniker": "C:\\Users\\svyat\\Documents\\GitHub\\BitByte\\BitByte-Notebook\\BitByte\\about.h",
+              "RelativeDocumentMoniker": "about.h",
+              "ToolTip": "C:\\Users\\svyat\\Documents\\GitHub\\BitByte\\BitByte-Notebook\\BitByte\\about.h",
+              "RelativeToolTip": "about.h",
+              "ViewState": "AQIAADkAAAAAAAAAAAAqwHwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-14T19:58:34.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "about.h [Design]",
+              "DocumentMoniker": "C:\\Users\\svyat\\Documents\\GitHub\\BitByte\\BitByte-Notebook\\BitByte\\about.h",
+              "RelativeDocumentMoniker": "about.h",
+              "ToolTip": "C:\\Users\\svyat\\Documents\\GitHub\\BitByte\\BitByte-Notebook\\BitByte\\about.h [Design]",
+              "RelativeToolTip": "about.h [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-14T19:57:34.543Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "mainWindow.h",
               "DocumentMoniker": "C:\\Users\\svyat\\Documents\\GitHub\\BitByte\\BitByte-Notebook\\BitByte\\mainWindow.h",
               "RelativeDocumentMoniker": "mainWindow.h",
               "ToolTip": "C:\\Users\\svyat\\Documents\\GitHub\\BitByte\\BitByte-Notebook\\BitByte\\mainWindow.h",
               "RelativeToolTip": "mainWindow.h",
-              "ViewState": "AQIAAOYBAAAAAAAAAAAqwAAAAAAAAAAA",
+              "ViewState": "AQIAABsCAAAAAAAAAAAqwCkCAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-10T08:48:14.707Z",
+              "WhenOpened": "2024-06-14T19:48:58.546Z",
               "EditorCaption": ""
             },
             {
@@ -50,8 +87,21 @@
               "ToolTip": "C:\\Users\\svyat\\Documents\\GitHub\\BitByte\\BitByte-Notebook\\BitByte\\mainWindow.h [Design]",
               "RelativeToolTip": "mainWindow.h [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-10T08:46:46.002Z",
+              "WhenOpened": "2024-06-14T19:43:57.058Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "mainWindow.cpp",
+              "DocumentMoniker": "C:\\Users\\svyat\\Documents\\GitHub\\BitByte\\BitByte-Notebook\\BitByte\\mainWindow.cpp",
+              "RelativeDocumentMoniker": "mainWindow.cpp",
+              "ToolTip": "C:\\Users\\svyat\\Documents\\GitHub\\BitByte\\BitByte-Notebook\\BitByte\\mainWindow.cpp",
+              "RelativeToolTip": "mainWindow.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-14T19:41:14.703Z",
+              "EditorCaption": ""
             }
           ]
         }

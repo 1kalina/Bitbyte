@@ -1,4 +1,5 @@
 ﻿#pragma once
+#include "about.h"
 
 #include <iostream>
 #include <fstream>
@@ -81,6 +82,11 @@ namespace BitByte {
 	private: System::Windows::Forms::ToolStripMenuItem^ cutToolStripMenuItem1;
 	private: System::Windows::Forms::ToolStripMenuItem^ toolStripMenuItem1;
 	private: System::Windows::Forms::ToolStripSeparator^ toolStripSeparator2;
+	private: System::Windows::Forms::ToolStripMenuItem^ infoToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripTextBox^ toolStripTextBox1;
+	private: System::Windows::Forms::ToolStripSeparator^ toolStripSeparator3;
+	private: System::Windows::Forms::ToolStripMenuItem^ aboutToolStripMenuItem;
+
 
 
 	private: System::ComponentModel::IContainer^ components;
@@ -128,6 +134,10 @@ namespace BitByte {
 			this->pasteToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->fontDialog1 = (gcnew System::Windows::Forms::FontDialog());
 			this->colorDialog1 = (gcnew System::Windows::Forms::ColorDialog());
+			this->infoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripTextBox1 = (gcnew System::Windows::Forms::ToolStripTextBox());
+			this->toolStripSeparator3 = (gcnew System::Windows::Forms::ToolStripSeparator());
+			this->aboutToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->contextMenuStrip1->SuspendLayout();
 			this->SuspendLayout();
@@ -158,11 +168,11 @@ namespace BitByte {
 			// 
 			// menuStrip1
 			// 
-			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
-				this->fileToolStripMenuItem,
-					this->editToolStripMenuItem, this->formatToolStripMenuItem
-			});
 			resources->ApplyResources(this->menuStrip1, L"menuStrip1");
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
+				this->fileToolStripMenuItem,
+					this->editToolStripMenuItem, this->formatToolStripMenuItem, this->infoToolStripMenuItem
+			});
 			this->menuStrip1->Name = L"menuStrip1";
 			// 
 			// fileToolStripMenuItem
@@ -326,6 +336,32 @@ namespace BitByte {
 			// colorDialog1
 			// 
 			this->colorDialog1->AnyColor = true;
+			// 
+			// infoToolStripMenuItem
+			// 
+			this->infoToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
+				this->toolStripTextBox1,
+					this->toolStripSeparator3, this->aboutToolStripMenuItem
+			});
+			this->infoToolStripMenuItem->Name = L"infoToolStripMenuItem";
+			resources->ApplyResources(this->infoToolStripMenuItem, L"infoToolStripMenuItem");
+			// 
+			// toolStripTextBox1
+			// 
+			resources->ApplyResources(this->toolStripTextBox1, L"toolStripTextBox1");
+			this->toolStripTextBox1->Name = L"toolStripTextBox1";
+			this->toolStripTextBox1->Click += gcnew System::EventHandler(this, &mainWindow::toolStripTextBox1_Click);
+			// 
+			// toolStripSeparator3
+			// 
+			this->toolStripSeparator3->Name = L"toolStripSeparator3";
+			resources->ApplyResources(this->toolStripSeparator3, L"toolStripSeparator3");
+			// 
+			// aboutToolStripMenuItem
+			// 
+			this->aboutToolStripMenuItem->Name = L"aboutToolStripMenuItem";
+			resources->ApplyResources(this->aboutToolStripMenuItem, L"aboutToolStripMenuItem");
+			this->aboutToolStripMenuItem->Click += gcnew System::EventHandler(this, &mainWindow::aboutToolStripMenuItem_Click);
 			// 
 			// mainWindow
 			// 
@@ -511,6 +547,13 @@ namespace BitByte {
 		// Reset background color to default (white)
 		richTextBox1->BackColor = System::Drawing::Color::White;
 	}
-	};
+	private: System::Void toolStripTextBox1_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+		//About
+private: System::Void aboutToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	about^ aboutForm = gcnew about;
+	aboutForm->Show();
+}
+};
 
 }
